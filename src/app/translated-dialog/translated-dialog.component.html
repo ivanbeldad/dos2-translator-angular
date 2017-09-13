@@ -1,0 +1,31 @@
+<div id="root">
+  <div class="dialog">
+    <div class="text-box">
+      <div class="text">
+        <span class="transmitter">{{ transmitter }}</span>
+        <span>&nbsp;-&nbsp;</span>
+        <span class="message">{{ message }}</span>
+        <div class="responses">
+          <div *ngFor="let response of responses">{{ response.index }}. {{ response.message }}</div>
+        </div>
+      </div>
+    </div>
+    <img src="../../assets/images/textDialogBackground.png" alt="">
+  </div>
+</div>
+
+<div id="original">
+  <div class="dialog">
+    <div class="text-box">
+      <div class="text">
+        <span class="transmitter">{{ originalTextService.transmitter }}</span>
+        <span *ngIf="originalTextService.transmitter">&nbsp;-&nbsp;</span>
+        <span class="message">{{ originalTextService.message }}</span>
+        <div class="responses">
+          <div *ngFor="let key of keys(originalTextService.responses)">{{ key }}. {{ responses[key].message }}</div>
+        </div>
+      </div>
+    </div>
+    <img src="../../assets/images/textDialogBackground.png" alt="">
+  </div>
+</div>

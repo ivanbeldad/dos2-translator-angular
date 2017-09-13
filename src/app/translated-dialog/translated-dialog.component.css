@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+.dialog {
+  position: relative;
+  max-width: 1790px;
+}
+
+.dialog .text {
+  position: absolute;
+  left: 14vw;
+  top: 2.1vw;
+  font: normal 1.3vw/1.6 Alegreya, Serif;
+  color: #fafafa;
+}
+
+.dialog .text span {
+  white-space: pre-line;
+}
+
+.dialog .text .transmitter {
+  color: #fffe66;
+}
+
+.dialog .text .responses {
+  position: absolute;
+  top: 7vw;
+  left: 5vw;
+  color: #c3b69f;
+}
+
+.dialog .image {
+  max-width: 100%;
+  width: auto\9;
+}
