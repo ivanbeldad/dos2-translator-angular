@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { OriginalTextService } from './original-text.service';
+import { OriginalTextService } from '../text/original-text.service';
 
 @Injectable()
 export class OriginalTextUpdaterService {
@@ -19,7 +19,7 @@ export class OriginalTextUpdaterService {
         this.originalTextService.message = json.message;
         this.originalTextService.responses = json.responses;
       });
-    }, 500);
+    }, 250);
   }
 
 }

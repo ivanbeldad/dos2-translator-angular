@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class TranslatedTextService {
+export class TextService {
 
   public transmitter;
   public message;

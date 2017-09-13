@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { TranslatedTextService } from './translated-text.service';
+import { TranslatedTextService } from '../text/translated-text.service';
 
 @Injectable()
 export class TranslatedTextUpdaterService {
@@ -20,7 +20,7 @@ export class TranslatedTextUpdaterService {
         this.translatedTextService.message = json.message;
         this.translatedTextService.responses = json.responses;
       });
-    }, 500);
+    }, 250);
   }
 
 }

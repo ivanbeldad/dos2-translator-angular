@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { OriginalTextService } from './text/original-text.service';
+import { TranslatedTextService } from './text/translated-text.service';
+import { OriginalTextUpdaterService } from './updater/original-text-updater.service';
+import { TranslatedTextUpdaterService } from './updater/translated-text-updater.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  constructor(
+    public originalText: OriginalTextService,
+    public translatedText: TranslatedTextService,
+    public originTextUpdater: OriginalTextUpdaterService,
+    public translatedTextUpdater: TranslatedTextUpdaterService) {
+  }
+
 }

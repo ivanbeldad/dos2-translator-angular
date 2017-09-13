@@ -8,6 +8,7 @@
 
 .dialog .text {
   position: absolute;
+  margin-right: 10vw;
   left: 14vw;
   top: 1.9vw;
   font: normal 1.3vw/1.6 Alegreya, Serif;
@@ -19,7 +20,7 @@
 }
 
 .dialog .text .transmitter {
-  color: #fffe66;
+  color: #fcd203;
 }
 
 .dialog .text .responses {
