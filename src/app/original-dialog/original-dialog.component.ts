@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslatedTextService } from './translated-text.service';
-import { TranslatedTextUpdaterService } from './translated-text-updater.service';
+import { OriginalTextService } from './original-text.service';
+import { OriginalTextUpdaterService } from './original-text-updater.service';
 
 @Component({
-  selector: 'app-translated-dialog',
-  templateUrl: './translated-dialog.component.html',
-  styleUrls: ['./translated-dialog.component.css']
+  selector: 'app-original-dialog',
+  templateUrl: './original-dialog.component.html',
+  styleUrls: ['./original-dialog.component.css']
 })
-export class TranslatedDialogComponent implements OnInit {
+export class OriginalDialogComponent implements OnInit {
 
   public transmitter;
   public message;
@@ -15,8 +15,8 @@ export class TranslatedDialogComponent implements OnInit {
   public keys = Object.keys;
 
   constructor(
-    public translatedTextService: TranslatedTextService,
-    public translatedTextUpdaterService: TranslatedTextUpdaterService,
+    public originalTextService: OriginalTextService,
+    public originalTextUpdaterService: OriginalTextUpdaterService,
   ) { }
 
   ngOnInit() {

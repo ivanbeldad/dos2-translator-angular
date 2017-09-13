@@ -12,17 +12,14 @@ export class OriginalTextUpdaterService {
   }
 
   start(): void {
-    console.log("HERE");
     this.interval = setInterval(() => {
-      console.log("Rulando");
-      this.http.get('http://localhost:8080/dialogText/original/').subscribe(res => {
+      this.http.get('http://192.168.1.100:8080/dialogText/original/').subscribe(res => {
         const json = res.json();
         this.originalTextService.transmitter = json.transmitter;
         this.originalTextService.message = json.message;
         this.originalTextService.responses = json.responses;
-        console.log(json.responses);
       });
-    }, 3000);
+    }, 500);
   }
 
 }

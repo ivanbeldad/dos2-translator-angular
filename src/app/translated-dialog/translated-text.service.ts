@@ -1,4 +1,7 @@
-export class DialogText {
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class TranslatedTextService {
 
   public transmitter;
   public message;

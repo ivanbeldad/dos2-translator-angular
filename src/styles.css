@@ -11,3 +11,10 @@
 body {
   background-color: #212121;
 }
+
+html, body, main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
