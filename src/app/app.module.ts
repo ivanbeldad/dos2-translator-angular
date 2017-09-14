@@ -7,7 +7,10 @@ import { OriginalTextService } from './text/original-text.service';
 import { HttpModule } from '@angular/http';
 import { TranslatedTextService } from './text/translated-text.service';
 import { TranslatedTextUpdaterService } from './updater/translated-text-updater.service';
-import { TextDialogComponent } from './text-dialog/text-dialog.component';
+import { TextDialogComponent } from './text-dialog-component/text-dialog.component';
+import { CurrentApiCallsService } from './counter/current-api-calls.service';
+import { TotalApiCallsService } from './counter/total-api-calls.service';
+import { CounterUpdaterService } from './updater/counter-updater.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { TextDialogComponent } from './text-dialog/text-dialog.component';
     OriginalTextUpdaterService,
     TranslatedTextService,
     TranslatedTextUpdaterService,
+    CurrentApiCallsService,
+    TotalApiCallsService,
+    CounterUpdaterService,
   ],
   bootstrap: [AppComponent]
 })
