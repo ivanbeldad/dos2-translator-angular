@@ -8,15 +8,12 @@
 
 .dialog .text {
   position: absolute;
+  width: 70vw;
   margin-right: 10vw;
   left: 14vw;
   top: 1.9vw;
   font: normal 1.3vw/1.6 Alegreya, Serif;
   color: #fafafa;
-}
-
-.dialog .text span {
-  white-space: pre-line;
 }
 
 .dialog .text .transmitter {
@@ -34,4 +31,20 @@
   max-width: 100%;
   width: auto\9;
   max-height: 50vh;
+}
+
+.response {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.responseIndex {
+  flex-grow: 0;
+  padding-right: 10px;
+  font: normal 1.6vw/1.6 Alegreya, Serif;
+}
+
+.responseMessage {
+  flex-grow: 1;
 }

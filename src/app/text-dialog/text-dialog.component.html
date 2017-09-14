@@ -6,7 +6,10 @@
         <span *ngIf="textService.transmitter">&nbsp;-&nbsp;</span>
         <span class="message">{{ textService.message }}</span>
         <div class="responses">
-          <div *ngFor="let key of keys(textService.responses)">{{ key }}. {{ textService.responses[key] }}</div>
+          <div class="response" *ngFor="let key of keys(textService.responses)">
+            <div class="responseIndex" style="height: 100%; display: inline-block">{{ key }}.</div>
+            <div class="responseMessage">{{ textService.responses[key] }}</div>
+          </div>
         </div>
       </div>
     </div>
